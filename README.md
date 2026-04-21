@@ -1,60 +1,51 @@
 # Interview Preparation
 
-This repository contains C++ practice solutions for common coding interview questions.
+This repository tracks interview problems in a compact format so it is easy to scale to 191 problems.
 
-## Current Structure
+## Problem Format
+
+For each problem, only these details are maintained:
+- Folder structure for that problem
+- Approach followed
+- Time complexity
+- Space complexity
+
+---
+
+## Problem 1: Reverse Linked List
+
+### Folder Structure
 
 ```text
-Interview-Preparation/
-|-- Linked List/
-|   `-- reverseLinkedList.cpp
-`-- README.md
+Linked List/
+`-- reverseLinkedList.cpp
 ```
 
-## Implemented Problem
+### Approach Followed
+- Iterative pointer reversal (`prev`, `curr`, `forward`)
 
-### Reverse a Singly Linked List
+### Time Complexity
+- `O(n)`
 
-File: `Linked List/reverseLinkedList.cpp`
+### Space Complexity
+- `O(1)`
 
-The file includes:
-- A `ListNode` structure for singly linked list nodes.
-- An **iterative** linked list reversal approach.
-- A **recursive** linked list reversal approach.
+---
 
-## Approach Summary
+## Template For Next Problems
 
-### 1) Iterative Approach
-- Uses three pointers: `prev`, `curr`, and `forward`.
-- Reverses pointers one by one while traversing the list.
+```md
+## Problem <number>: <problem name>
 
-Time complexity: `O(n)`  
-Space complexity: `O(1)`
+### Folder Structure
+<folder and file path>
 
-### 2) Recursive Approach
-- Recursively reverses the sub-list from `head->next` onward.
-- Rewires pointers while backtracking.
+### Approach Followed
+<short approach summary>
 
-Time complexity: `O(n)`  
-Space complexity: `O(n)` (recursion stack)
+### Time Complexity
+<Big-O>
 
-## How to Compile and Run
-
-From the project root, run:
-
-```bash
-g++ "Linked List/reverseLinkedList.cpp" -std=c++17 -o reverseLinkedList
-./reverseLinkedList
+### Space Complexity
+<Big-O>
 ```
-
-On Windows PowerShell:
-
-```powershell
-g++ "Linked List/reverseLinkedList.cpp" -std=c++17 -o reverseLinkedList.exe
-.\reverseLinkedList.exe
-```
-
-## Notes
-
-- This repository is intended for interview practice and concept revision.
-- More data structure and algorithm problems can be added in separate folders over time.
