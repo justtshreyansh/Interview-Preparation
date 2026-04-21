@@ -32,6 +32,28 @@ Linked List/
 
 ---
 
+## Problem 2: Middle of Linked List
+
+### Folder Structure
+
+```text
+Linked List/
+`-- middleOfLinkedList.cpp
+```
+
+### Approach Followed
+- Two-pointer technique (`slow` and `fast`)
+- Move `slow` by 1 step and `fast` by 2 steps
+- When `fast` reaches the end, `slow` is at the middle
+
+### Time Complexity
+- `O(n)`
+
+### Space Complexity
+- `O(1)`
+
+---
+
 ## Template For Next Problems
 
 ```md
